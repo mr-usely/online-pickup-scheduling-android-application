@@ -26,7 +26,7 @@ import 'User.dart';
 // }
 
 // declare for debugging mode or not.
-bool testMode = true;
+bool testMode = false;
 
 void main() async {
   runApp(MyApp());

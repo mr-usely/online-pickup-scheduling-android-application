@@ -158,6 +158,7 @@ class _LogInState extends State<LogIn> {
                   ));
         }
       } catch (_) {
+        print('test');
         print(_);
       }
     } on SocketException catch (_) {

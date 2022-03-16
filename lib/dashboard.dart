@@ -154,6 +154,7 @@ class _DashboardState extends State<Dashboard> {
     loading = true;
     typed = false;
     setState(() => sending = true);
+    print('sending');
     if (online || onSMS == false)
       try {
         if (_farName.text.isNotEmpty) {
@@ -1729,7 +1730,7 @@ class _DashboardState extends State<Dashboard> {
                                                                   "Cancel")),
                                                           TextButton(
                                                               onPressed: () =>
-                                                                  _send,
+                                                                  _send(),
                                                               child: Text("Ok"))
                                                         ],
                                                       )),
